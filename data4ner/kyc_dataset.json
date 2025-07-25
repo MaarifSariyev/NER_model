@@ -1,0 +1,42 @@
+[
+  {
+    "tokens": ["Müştəri", ":", "Aytac", "Məmmədova", ",", "1992-ci", "il", "təvəllüdlü", ",", "Bakı", "şəhərində", "qeydiyyatdadır", "."],
+    "ner_tags": ["O", "O", "B-PERSON", "I-PERSON", "O", "B-DATE", "I-DATE", "O", "O", "B-LOCATION", "I-LOCATION", "O", "O"]
+  },
+  {
+    "tokens": ["Cavid", "Əhmədov", "AZE76439821", "nömrəli", "şəxsiyyət", "vəsiqəsinə", "malikdir", "."],
+    "ner_tags": ["B-PERSON", "I-PERSON", "B-ID", "O", "O", "O", "O", "O"]
+  },
+  {
+    "tokens": ["Məlumatlara", "əsasən", "şirkətin", "adı", "XaliqBank", "ASC-dir", "."],
+    "ner_tags": ["O", "O", "O", "O", "B-ORGANIZATION", "O", "O"]
+  },
+  {
+    "tokens": ["Vətəndaş", "Azərbaycan", "Respublikası", "vətəndaşıdır", "."],
+    "ner_tags": ["O", "B-NATIONALITY", "I-NATIONALITY", "O", "O"]
+  },
+  {
+    "tokens": ["Əlaqə", "nömrəsi", ":", "+994", "50", "123", "45", "67"],
+    "ner_tags": ["O", "O", "O", "B-PHONE", "I-PHONE", "I-PHONE", "I-PHONE"]
+  },
+  {
+    "tokens": ["Ünvan", ":", "Sumqayıt", "şəhəri", ",", "5-ci", "mkr", ",", "ev", "12"],
+    "ner_tags": ["O", "O", "B-LOCATION", "I-LOCATION", "O", "I-LOCATION", "I-LOCATION", "O", "O", "O"]
+  },
+  {
+    "tokens": ["Email", "ünvanı", ":", "aytac.mammadova", "@", "mail", ".", "az"],
+    "ner_tags": ["O", "O", "O", "B-EMAIL", "I-EMAIL", "I-EMAIL", "I-EMAIL", "I-EMAIL"]
+  },
+  {
+    "tokens": ["Doğum", "tarixi", ":", "14", "mart", "1985-ci", "il"],
+    "ner_tags": ["O", "O", "O", "B-DATE", "I-DATE", "I-DATE", "I-DATE"]
+  },
+  {
+    "tokens": ["Təşkilat", ":", "Dövlət", "Gömrük", "Komitəsi"],
+    "ner_tags": ["O", "O", "B-ORGANIZATION", "I-ORGANIZATION", "I-ORGANIZATION"]
+  },
+  {
+    "tokens": ["Müştəri", ":", "Fuad", "Kazımov", ",", "2000-ci", "il", "doğumludur", ",", "Gəncə", "şəhərində", "yaşayır", "."],
+    "ner_tags": ["O", "O", "B-PERSON", "I-PERSON", "O", "B-DATE", "I-DATE", "O", "O", "B-LOCATION", "I-LOCATION", "O", "O"]
+  }
+]
