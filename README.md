@@ -55,13 +55,13 @@ Used tokenizer's word_ids() to align labels with tokenized subtokens.
 Subtokens were assigned -100 to be ignored during loss computation.
 
 ## ⚙️ Model Training
-# Pretrained model: bert-base-multilingual-cased
+ **Pretrained model**: bert-base-multilingual-cased
 
-# Framework: Hugging Face Transformers
+ **Framework**: Hugging Face Transformers
 
-# Training method: Fine-tuning on cleaned dataset
+ **Training method**: Fine-tuning on cleaned dataset
 
-# Evaluation metrics: Precision, Recall, F1-score
+ **Evaluation metrics**: Precision, Recall, F1-score
 
 ## 📊 Evaluation Results
 Entity	Precision	Recall	F1-score
@@ -86,9 +86,7 @@ python train.py
 # Evaluate
 python evaluate.py
 📁 File Structure
-pgsql
-Kopyala
-Düzenle
+
 ├── kyc_ner_dataset_strict_bio.json   # Cleaned BIO dataset
 ├── kyc_tokenized_aligned_dataset.json
 ├── preprocess.py
