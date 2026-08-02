@@ -54,6 +54,31 @@ Writing model shards: 100%
 Saved model + run_summary.json -> model_out
 Fine-tune a token-classification NER model on our train/test split.
 
+Classification Report:
+                precision    recall  f1-score   support
+
+             O       0.97      0.95      0.96      2481
+      B-PERSON       0.90      0.91      0.91       101
+      I-PERSON       0.92      0.98      0.95       143
+B-ORGANIZATION       0.62      0.88      0.72       205
+I-ORGANIZATION       0.69      0.89      0.78       157
+    B-LOCATION       0.95      0.92      0.93       241
+    I-LOCATION       1.00      0.59      0.74        54
+         B-JOB       0.11      0.06      0.08        17
+         I-JOB       1.00      0.75      0.86         4
+     B-PRODUCT       0.58      0.38      0.46       165
+     I-PRODUCT       0.00      0.00      0.00        58
+   B-WORKOFART       0.77      0.92      0.84       132
+   I-WORKOFART       0.83      0.98      0.90       142
+    B-TIMEDATE       0.87      0.78      0.82       114
+    I-TIMEDATE       0.81      0.90      0.85       103
+      B-AMOUNT       0.88      0.88      0.88       181
+      I-AMOUNT       0.64      0.81      0.71        75
+
+      accuracy                           0.89      4373
+     macro avg       0.74      0.74      0.73      4373
+  weighted avg       0.88      0.89      0.88      4373
+
 Input : data_split/train.csv, data_split/test.csv, data_split/label_list.json
         (produced by split_and_bio.py). Each row has `tokens` (JSON list) and
         `ner_tags` (JSON list of BIO strings).
