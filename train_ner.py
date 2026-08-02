@@ -3,6 +3,55 @@
 """
 train_ner.py
 
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+[transformers] warmup_ratio is deprecated and will be removed in v5.2. Use `warmup_steps` instead.
+============================================================
+HYPERPARAMETERS
+============================================================
+  data_dir        : .
+  model           : xlm-roberta-base
+  epochs          : 5
+  batch_size      : 16
+  lr              : 2e-05
+  weight_decay    : 0.01
+  max_length      : 256
+  warmup_ratio    : 0.1
+  seed            : 42
+  outdir          : model_out
+  labels          : 17 (['O', 'B-PERSON', 'I-PERSON', 'B-ORGANIZATION', 'I-ORGANIZATION', 'B-LOCATION', 'I-LOCATION', 'B-JOB', 'I-JOB', 'B-PRODUCT', 'I-PRODUCT', 'B-WORKOFART', 'I-WORKOFART', 'B-TIMEDATE', 'I-TIMEDATE', 'B-AMOUNT', 'I-AMOUNT'])
+  train rows      : 1387
+  test rows       : 140
+ [435/435 07:36, Epoch 5/5]
+Epoch	Training Loss	Validation Loss
+1	1.161867	0.742766
+2	0.345136	0.540268
+3	0.163696	0.426049
+4	0.113948	0.422049
+5	0.075168	0.426686
+Writing model shards: 100%
+ 1/1 [00:17<00:00, 17.57s/it]
+Writing model shards: 100%
+ 1/1 [00:25<00:00, 25.21s/it]
+Writing model shards: 100%
+ 1/1 [00:20<00:00, 20.28s/it]
+Writing model shards: 100%
+ 1/1 [00:26<00:00, 26.70s/it]
+Writing model shards: 100%
+ 1/1 [00:27<00:00, 27.90s/it]
+
+============================================================
+FINAL TEST METRICS
+============================================================
+ [9/9 00:00]
+Training Loss	Validation Loss	Epoch
+0.075168	0.422049	5
+  loss            : 0.4220
+Writing model shards: 100%
+ 1/1 [00:08<00:00,  8.63s/it]
+
+Saved model + run_summary.json -> model_out
 Fine-tune a token-classification NER model on our train/test split.
 
 Input : data_split/train.csv, data_split/test.csv, data_split/label_list.json
