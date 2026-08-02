@@ -1,0 +1,40 @@
+{
+  "id2label": {
+    "0": "O",
+    "1": "B-PERSON",
+    "2": "I-PERSON",
+    "3": "B-ORGANIZATION",
+    "4": "I-ORGANIZATION",
+    "5": "B-LOCATION",
+    "6": "I-LOCATION",
+    "7": "B-JOB",
+    "8": "I-JOB",
+    "9": "B-PRODUCT",
+    "10": "I-PRODUCT",
+    "11": "B-WORKOFART",
+    "12": "I-WORKOFART",
+    "13": "B-TIMEDATE",
+    "14": "I-TIMEDATE",
+    "15": "B-AMOUNT",
+    "16": "I-AMOUNT"
+  },
+  "label2id": {
+    "O": 0,
+    "B-PERSON": 1,
+    "I-PERSON": 2,
+    "B-ORGANIZATION": 3,
+    "I-ORGANIZATION": 4,
+    "B-LOCATION": 5,
+    "I-LOCATION": 6,
+    "B-JOB": 7,
+    "I-JOB": 8,
+    "B-PRODUCT": 9,
+    "I-PRODUCT": 10,
+    "B-WORKOFART": 11,
+    "I-WORKOFART": 12,
+    "B-TIMEDATE": 13,
+    "I-TIMEDATE": 14,
+    "B-AMOUNT": 15,
+    "I-AMOUNT": 16
+  }
+}
